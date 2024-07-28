@@ -1,0 +1,43 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Kanit', sans-serif;
+}
+
+.head-section {
+    width: 100%;
+}
+
+.container-custom {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container-button-custom {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+}
+
+.Logo {
+    width: 40px;
+    margin-right: 12px;
+}
+
+.h-custom {
+    margin: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    transition: all 0.5s ease-in-out;
+}
