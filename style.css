@@ -38,6 +38,10 @@ nav {
     z-index: 1000;
 }
 
+.m-custom {
+    margin-top: 60px;
+}
+
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -47,7 +51,17 @@ nav {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #ffffff, #d9a7c7);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin-top: 60px;
+}
+
+.banner-section {
+    width: 100%;
+    height: 100vh;
+    background: #d9a7c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3C3B3F, #d9a7c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3C3B3F, #d9a7c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .img-custom {
