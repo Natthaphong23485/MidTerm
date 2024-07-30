@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- style.css -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -32,7 +32,7 @@
         <header class="container-custom">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="container-lg">
-                    <img class="Logo" src="../Frontend_Assets/logo.png" alt="Logo">
+                    <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
                     <a class="navbar-brand" href="/">
                         <h2 class="h-custom">NEW MART</h2>
                     </a>
@@ -43,6 +43,9 @@
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="./shop.html">Shop</a>
                             </li>
                             <li class="nav-item text-center">
                                 <a class="nav-link" href="./men.html">Men</a>
@@ -58,8 +61,10 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center container-button-custom">
-                            <button class="btn btn-outline-light me-2" type="button">Login</button>
-                            <button class="btn btn-outline-light me-2" type="button">Register</button>
+                            <button class="btn btn-outline-light me-2" id="loginButton" type="button">Login</button>
+                            <button class="btn btn-outline-light me-2" id="registerButton"
+                                type="button">Register</button>
+                            <button class="btn btn-outline-light me-2 d-none" id="logoutButton" type="button">Logout</button>
                             <button class="btn btn-outline-light" type="button">
                                 <i class="fa-solid fa-cart-shopping"></i> Cart
                             </button>
@@ -69,23 +74,34 @@
         </header>
     </section>
 
-    <main>
+    <main class="mb-5">
         <!--Banner section-->
         <section class="banner-section m-custom">
-            <div class="pt-2 pb-5 container-lg h-100">
+            <div class="container-lg h-100">
                 <div class="row d-flex align-items-center h-100">
-
+                    <div class="col-md-6 px-3 d-flex content">
+                        <div>
+                            <h1 class="text-custom2"><span class="text-orange text-custom1">FLAT 50% OFF</span><br><span
+                                    class="text-orange">12</span> Hours <span class="text-orange">20</span> mins</h1>
+                            <button type="button" class="btn btn-success rounded-pill px-4">
+                                <i class="fa fa-shopping-cart"></i> BUY NOW
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 how-img px-5 d-flex justify-content-center h-100">
+                        <img src="./Frontend_Assets/banner_women-removebg.png" class="img-banner-custom" alt="" />
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--Men collection section-->
-        <section class="container m-custom pb-5 products">
+        <section class="container mt-5">
             <h1>Men Clothes</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                 <div class="col">
                     <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="../Frontend_Assets/product_13.png" class="card-img-top penguin-card-img w-100"
+                        <img src="./Frontend_Assets/product_13.png" class="card-img-top penguin-card-img w-100"
                             alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Yellow Coat Jacket</h5>
@@ -107,7 +123,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="../Frontend_Assets/product_14.png" class="card-img-top penguin-card-img w-100"
+                        <img src="./Frontend_Assets/product_14.png" class="card-img-top penguin-card-img w-100"
                             alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Women Clothes</h5>
@@ -130,7 +146,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="../Frontend_Assets/product_15.png" class="card-img-top penguin-card-img w-100"
+                        <img src="./Frontend_Assets/product_15.png" class="card-img-top penguin-card-img w-100"
                             alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Woman Leather Jacket</h5>
@@ -160,7 +176,7 @@
             <div class="row">
                 <div id="about-us" class="col-sm pe-5 pt-3">
                     <div class="d-flex align-items-center">
-                        <img src="../Frontend_Assets/logo.png" alt="" class="img-fluid" />
+                        <img src="./Frontend_Assets/logo.png" alt="" class="img-fluid" />
                         <a class="navbar-brand" href="/">
                             <h2 class="h-custom text-light ms-3">NEW MART</h2>
                         </a>
@@ -198,7 +214,7 @@
                     <div class="pt-5">
                         <h5 class="text-light">Pay with</h5>
                         <hr class="text-light" />
-                        <img src="../Frontend_Assets/pay.png" class="w-75" alt="" />
+                        <img src="./Frontend_Assets/pay.png" class="w-75" alt="" />
                     </div>
                 </div>
             </div>
@@ -211,7 +227,7 @@
         </footer>
     </section>
 
-    <script src="../script.js"></script>
+    <script src="./auth.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>New Mart</title>
+</head>
+
+<body>
+    <!--Nav bar-->
+  <section class="head-section">
+    <header class="container-custom">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-lg">
+          <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
+          <a class="navbar-brand" href="/">
+            <h2 class="h-custom">NEW MART</h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-dark" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item text-center">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="./men.html">Men</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="./women.html">Women</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="./kids.html">Kids</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center container-button-custom">
+              <button class="btn btn-outline-light me-2" id="loginButton" type="button">Login</button>
+              <button class="btn btn-outline-light me-2" id="registerButton" type="button">Register</button>
+              <button class="btn btn-outline-light me-2 d-none" id="logoutButton" type="button">Logout</button>
+              <button class="btn btn-outline-light" type="button">
+                <i class="fa-solid fa-cart-shopping"></i> Cart
+              </button>
+            </div>
+          </div>
+      </nav>
+    </header>
+  </section>
+
+  <main>
+    <!--Banner section-->
+    <section class="login-section m-custom">
+        <div class="container h-100 mt-5 d-flex align-items-center">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Register</h3>
+                </div>
+                <div class="card-body">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="registerEmail">Email:</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password:</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Register</button>
+                    </form>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    Already have an account? <a href="./login.html">Login here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+  <section class="footer-section bg-dark">
+    <div class="container pb-5">
+      <div class="row">
+        <div id="about-us" class="col-sm pe-5 pt-3">
+          <div class="d-flex align-items-center">
+            <img src="./Frontend_Assets/logo.png" alt="" class="img-fluid" />
+            <a class="navbar-brand" href="/">
+              <h2 class="h-custom text-light ms-3">NEW MART</h2>
+            </a>
+          </div>
+          <hr class="text-light" />
+          <p class="text-light">
+            Changing the way you dress will change the way you feel. When you
+            are well dressed and look good you will automatically feel better.
+            When you feel good about yourself, you are more likely to feel
+            good inside, treat others better, and have more energy.
+          </p>
+        </div>
+        <div class="col-sm pe-5 pt-3">
+          <h5 class="text-light">Contact us:</h5>
+          <hr />
+          <p class="text-light">
+            <i class="fa-solid fa-location-dot me-3"> </i>Shradha Park, B-37/39
+            Hingna–Wadi Link Road, Nagpur - 440016.
+          </p>
+          <p class="text-light">
+            <i class="fa fa-envelope-open me-2"></i>
+            vaibhav.mathane.cse@ghrietn.raisoni.net
+          </p>
+          <p class="text-light"><i class="fa fa-phone me-2"></i> +911234567891</p>
+        </div>
+        <div class="col-sm pe-5 pt-3">
+          <div>
+            <h5 class="text-light">Get in Touch</h5>
+            <hr class="text-light" />
+            <i class="fa-brands fa-facebook text-light fs-2 px-1"></i>
+            <i class="fa-brands fa-youtube text-light fs-2 px-1"></i>
+            <i class="fa-brands fa-square-instagram text-light fs-2 px-1"></i>
+            <i class="fa-brands fa-linkedin text-light fs-2 px-1"></i>
+          </div>
+          <div class="pt-5">
+            <h5 class="text-light">Pay with</h5>
+            <hr class="text-light" />
+            <img src="./Frontend_Assets/pay.png" class="w-75" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark">
+      <hr class="text-light" />
+      <p class="text-center text-light mb-0 pb-3">
+        © All Season Fashion 2024, all rights reserved by Natthaphong
+      </p>
+    </footer>
+  </section>
+
+  <script src="./auth.js"></script>
+</body>
+
+</html>

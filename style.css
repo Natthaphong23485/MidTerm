@@ -55,12 +55,23 @@ nav {
 
 .banner-section {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    background: #ffe0e0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffe0e0, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffe0e0, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login-section {
+    width: 100%;
+    height: 60vh;
     background: #d9a7c7;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #3C3B3F, #d9a7c7);
+    background: -webkit-linear-gradient(to top, #ffffff, #d9a7c7);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #3C3B3F, #d9a7c7);
+    background: linear-gradient(to top, #ffffff, #d9a7c7);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -70,9 +81,32 @@ nav {
     object-fit: cover;
 }
 
+.content {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
 
-.text-custom {
+.img-banner-custom {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-custom1 {
     font-size: 64px;
+}
+
+.text-custom2 {
+    font-size: 32px;
+}
+
+.text-custom3 {
+    font-size: 18px;
 }
 
 .icon-custom {
@@ -80,8 +114,27 @@ nav {
     text-align: start;
 }
 
-.products {
-    margin-top: 3rem;
+.card {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+    .text-custom1 {
+        font-size: 54px;
+    }
+
+    .w-contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mf-contact {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -95,11 +148,17 @@ nav {
         height: 50vh;
     }
 
-    .text-custom {
-        font-size: 54px;
+    .img-banner-custom {
+        display: none;
+    }
+
+    .text-custom1 {
+        font-size: 40px;
     }
 
     .content {
+        width: 100%;
+        height: 100%;
         justify-content: center;
     }
 }
