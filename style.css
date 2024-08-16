@@ -120,6 +120,22 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.best-seller-pulse {
+    color: #ff0000;
+    font-weight: bold;
+    display: inline-block;
+    animation: pulse 0.5s infinite;
+}
+
 @media (max-width: 992px) {
     .text-custom1 {
         font-size: 54px;
