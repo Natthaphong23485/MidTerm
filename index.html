@@ -27,61 +27,55 @@
 
 <body>
   <!--Nav bar-->
-  <section class="head-section">
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div id="nav" class="container-lg">
-          <div class="d-flex">
-            <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
-            <a class="navbar-brand" href="/">
-              <h2 class="m-0">NEW MART</h2>
-            </a>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      <div class="container-xl">
+        <div class="d-flex">
+          <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
+          <a class="navbar-brand" href="/">
+            <h2 class="m-0">NEW MART</h2>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./shop.html">Shop</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./men.html">Men</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./women.html">Women</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./kids.html">Kids</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-center container-button-custom">
+            <button class="btn btn-outline-light me-2" id="loginButton" type="button">Login</button>
+            <button class="btn btn-outline-light me-2 d-none" id="logoutButton" type="button">Logout</button>
+            <button class="btn-cart text-light" type="button">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse bg-dark" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item text-center">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="./shop.html">Shop</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="./men.html">Men</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="./women.html">Women</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="./kids.html">Kids</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-            <!-- <form class="col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                aria-label="Search">
-            </form> -->
-            <div class="d-flex align-items-center container-button-custom">
-              <button class="btn btn-outline-light me-2" id="loginButton" type="button">Login</button>
-              <button class="btn btn-outline-light me-2" id="registerButton" type="button">Register</button>
-              <button class="btn btn-outline-light me-2 d-none" id="logoutButton" type="button">Logout</button>
-              <button class="cart text-light h-100" type="button">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-            </div>
-          </div>
-      </nav>
-    </header>
-  </section>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <!--Banner section-->
-    <section class="hero-section m-custom">
-      <div class="pt-2 pb-5 container-lg h-100">
+    <section class="hero-section container-fluid m-0">
+      <div class="pt-2 pb-5 container-xl h-100">
         <div class="row d-flex align-items-center h-100">
           <div class="col-12 col-md-6 px-3 d-flex content">
             <div class="text-center text-md-start">
@@ -100,9 +94,9 @@
       </div>
     </section>
 
-    <!-- Carousel men clothes section -->
+    <!-- Carousel men collection section -->
     <section class="mt-5">
-      <h1>Men Clothes <span class="best-seller-pulse">Best Seller</span></h1>
+      <h1 class="container-xl ps-2">Men Clothes <span class="best-seller-pulse">Best Seller</span></h1>
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
@@ -113,55 +107,323 @@
             class=""></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
               <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
             </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_13_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
               </div>
+            </div>
+          </div>
 
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
               <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
             </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_14_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
               <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
             </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_15_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
               </div>
             </div>
           </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <!-- View More Products Button -->
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link" href="./women.html">View
+            More >></a></button>
+      </div>
+    </section>
+
+    <!-- Carousel women collection section -->
+    <section class="mt-5">
+      <h1 class="container-xl ps-2">Men Clothes <span class="best-seller-pulse">Best Seller</span></h1>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+            class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_13_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_14_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_15_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- View More Products Button -->
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link" href="./women.html">View
+            More >></a></button>
+      </div>
+    </section>
+
+    <!-- Carousel kids collection section -->
+    <section class="mt-5">
+      <h1 class="container-xl ps-2">Men Clothes <span class="best-seller-pulse">Best Seller</span></h1>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+            class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_13_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_14_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative active">
+            <svg class="w-100 position-absolute top-0 start-0 bd-placeholder-img" width="100%" height="100%"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container position-relative py-3">
+              <div class="row align-items-center">
+                <!-- Text and Button -->
+                <div class="col-lg-6">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.
+                    </p>
+                    <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
+                      <i class="fa fa-shopping-cart"></i> BUY NOW
+                    </button>
+                  </div>
+                </div>
+                <!-- Image -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="./Frontend_Assets/product_15_removebg.png" alt="Model Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- View More Products Button -->
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link" href="./women.html">View
+            More >></a></button>
       </div>
     </section>
 
@@ -464,7 +726,7 @@
           <div class="d-flex align-items-center">
             <img src="./Frontend_Assets/logo.png" alt="" class="img-fluid" />
             <a class="navbar-brand" href="/">
-              <h2 class="h-custom text-light ms-3">NEW MART</h2>
+              <h2 class="text-light ms-3">NEW MART</h2>
             </a>
           </div>
           <hr class="text-light" />
