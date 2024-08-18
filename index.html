@@ -28,13 +28,15 @@
 <body>
   <!--Nav bar-->
   <section class="head-section">
-    <header class="container-custom">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-lg">
-          <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
-          <a class="navbar-brand" href="/">
-            <h2 class="h-custom">NEW MART</h2>
-          </a>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div id="nav" class="container-lg">
+          <div class="d-flex">
+            <img class="Logo" src="./Frontend_Assets/logo.png" alt="Logo">
+            <a class="navbar-brand" href="/">
+              <h2 class="m-0">NEW MART</h2>
+            </a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -59,16 +61,16 @@
                 <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <!-- <form class="col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
               <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
                 aria-label="Search">
-            </form>
+            </form> -->
             <div class="d-flex align-items-center container-button-custom">
               <button class="btn btn-outline-light me-2" id="loginButton" type="button">Login</button>
               <button class="btn btn-outline-light me-2" id="registerButton" type="button">Register</button>
               <button class="btn btn-outline-light me-2 d-none" id="logoutButton" type="button">Logout</button>
-              <button class="btn btn-outline-light" type="button">
-                <i class="fa-solid fa-cart-shopping"></i> Cart
+              <button class="cart text-light h-100" type="button">
+                <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
           </div>
@@ -81,22 +83,24 @@
     <section class="hero-section m-custom">
       <div class="pt-2 pb-5 container-lg h-100">
         <div class="row d-flex align-items-center h-100">
-          <div class="col-md-6 px-3 d-flex content">
-            <div>
-              <h1 class="text-custom1">New <span><img src="./Frontend_Assets/hand_icon.png" alt="hand icon"
-                    class="icon-custom"></span><br>collection<br>for everyone</h1>
+          <div class="col-12 col-md-6 px-3 d-flex content">
+            <div class="text-center text-md-start">
+              <h1 class="text-custom1">New <span class="d-none d-md-inline"><img src="./Frontend_Assets/hand_icon.png"
+                    alt="hand icon" class="icon-custom"></span><br class="d-none d-md-block">collection<br
+                  class="d-none d-md-block">for everyone</h1>
               <button type="button" class="btn btn-success rounded-pill btn-lg">
                 <i class="fa fa-shopping-cart"></i> BUY NOW
               </button>
             </div>
           </div>
-          <div class="col-md-6 how-img px-5 d-flex justify-content-center">
+          <div class="col-12 col-md-6 how-img px-5 d-flex justify-content-center">
             <img src="./Frontend_Assets/hero_image.png" class="img-custom" alt="" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Carousel men clothes section -->
     <section class="mt-5">
       <h1>Men Clothes <span class="best-seller-pulse">Best Seller</span></h1>
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -112,7 +116,21 @@
           <div class="carousel-item active">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
+            </svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
             </svg>
             <div class="container">
               <div class="carousel-caption text-start">
@@ -125,20 +143,7 @@
           <div class="carousel-item">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" opacity="0.5"></rect>
             </svg>
             <div class="container">
               <div class="carousel-caption text-start">
@@ -509,6 +514,7 @@
   </section>
 
   <script src="./auth.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

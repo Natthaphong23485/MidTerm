@@ -17,17 +17,9 @@ nav {
     height: 60px;
 }
 
-.container-custom {
-    width: 100%;
-}
-
 .Logo {
     width: 40px;
     margin-right: 12px;
-}
-
-.h-custom {
-    margin: 0;
 }
 
 .navbar {
@@ -36,6 +28,15 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.cart {
+    background: none;
+    border: none;
+}
+
+.cart i {
+    font-size: 24px;
 }
 
 .m-custom {
@@ -120,6 +121,11 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.bd-placeholder-img {
+    background-image: url('./Frontend_Assets/minimal-empty-room-mockup-with-white-patterned-wall.jpg');
+    background-size: cover;
+}
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -154,6 +160,9 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        height: 100%;
+    }
     .container-button-custom {
         width: 100%;
         justify-content: center;
