@@ -76,8 +76,7 @@ nav {
 
 .img-custom {
     width: auto;
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
 }
 
 .content {
@@ -120,8 +119,14 @@ nav {
 }
 
 .bd-placeholder-img {
-    background-image: url('./Frontend_Assets/minimal-empty-room-mockup-with-white-patterned-wall.jpg');
+    background-image: url('./Frontend_Assets/carousel_bg.jpg');
     background-size: cover;
+}
+
+.btn-custom {
+    border: none;
+    background: none;
+    color: #ffffff;
 }
 
 @keyframes pulse {
@@ -279,5 +284,9 @@ label {
         width: 100%;
         height: auto;
         justify-content: center;
+    }
+
+    .card {
+        width: 300px;
     }
 }

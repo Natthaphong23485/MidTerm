@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const loginButton = document.getElementById('loginButton');
-    const registerButton = document.getElementById('registerButton');
     const logoutButton = document.getElementById('logoutButton');
 
     // Create mockup user data
@@ -31,14 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Show Login and Register buttons
     function showAuthButtons() {
         if (loginButton) loginButton.classList.remove('d-none');
-        if (registerButton) registerButton.classList.remove('d-none');
         if (logoutButton) logoutButton.classList.add('d-none');
     }
 
     // Show Logout button
     function showLogoutButton() {
         if (loginButton) loginButton.classList.add('d-none');
-        if (registerButton) registerButton.classList.add('d-none');
         if (logoutButton) logoutButton.classList.remove('d-none');
     }
 
@@ -46,13 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loginButton) {
         loginButton.addEventListener('click', function () {
             window.location.href = 'login.html';
-        });
-    }
-
-    // Redirect to register page
-    if (registerButton) {
-        registerButton.addEventListener('click', function () {
-            window.location.href = 'register.html';
         });
     }
 
