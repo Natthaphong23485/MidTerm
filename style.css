@@ -63,20 +63,9 @@ nav {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.login-section {
-    width: 100%;
-    height: 60vh;
-    background: #d9a7c7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffffff, #d9a7c7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffffff, #d9a7c7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .img-custom {
     width: auto;
-    height: 100%;
+    height: 70%;
 }
 
 .content {
@@ -149,6 +138,17 @@ nav {
 }
 
 /* Login */
+.login-section {
+    width: 100%;
+    height: 100vh;
+    background: #d9a7c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffffff, #d9a7c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffffff, #d9a7c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .main {
     width: 350px;
     height: 500px;
