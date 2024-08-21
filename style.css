@@ -263,6 +263,11 @@ label {
     max-width: 300px;
 }
 
+/* product detail page */
+.product-detail {
+    margin-top: 20px;
+}
+
 @media (max-width: 1200px) {
     .container-button-custom button {
         margin: 10px 0 10px 0;
