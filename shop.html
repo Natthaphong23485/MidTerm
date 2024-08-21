@@ -81,251 +81,36 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-6 how-img px-5 d-flex justify-content-center h-100">
+                    <div class="col-12 col-md-6 px-5 d-flex justify-content-center align-items-center h-100">
                         <img src="./Frontend_Assets/logo_big.png" class="img-banner-custom" alt="" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Men collection section-->
-        <section class="container mt-5">
-            <h1>Men Clothes</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_13.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Yellow Coat Jacket</h5>
-                            <p class="card-text">
-                                Stylish yellow coat for young and beautiful ladies.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$82</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_14.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Women Clothes</h5>
-                            <p class="card-text">
-                                Jackets for casual wear in best prices and diffrent color
-                                patterns.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$72</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_15.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Woman Leather Jacket</h5>
-                            <p class="card-text">
-                                Leather jackets of premium quality.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$65</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container my-4">
+            <!-- Search Bar -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <input type="search" id="searchInput" class="form-control" placeholder="Search for products...">
+              </div>
             </div>
-            <!-- View More Products Button -->
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link"
-                        href="./men.html">View More >></a></button>
+        
+            <!-- Product Categories -->
+            <div class="row mb-4">
+              <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-outline-primary me-2" onclick="filterProducts('all')">All</button>
+                <button class="btn btn-outline-primary me-2" onclick="filterProducts('men')">Men</button>
+                <button class="btn btn-outline-primary me-2" onclick="filterProducts('women')">Women</button>
+                <button class="btn btn-outline-primary me-2" onclick="filterProducts('kids')">Kids</button>
+              </div>
             </div>
-        </section>
-
-        <!--Women collection section-->
-        <section class="container mt-5">
-            <h1 class="penguin-catagory">Woman Jacket</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_1.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Snowboard Jacket Mens</h5>
-                            <p class="card-text">
-                                Snowboard jacket are ferfect match for people in moutain areas
-                                or for tourist.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$85</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_2.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Man Leather Jackets</h5>
-                            <p class="card-text">
-                                Perfect bike riding jacket available with different color and
-                                sizes.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$74</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_3.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Man Casual Jackets</h5>
-                            <p class="card-text">
-                                Matte Black Jacket with all sizes available.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$68</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
+            <!-- Product Cards -->
+            <div class="row justify-content-center" id="productContainer">
+              <!-- Products will be dynamically added here -->
             </div>
-            <!-- View More Products Button -->
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link"
-                        href="./women.html">View More >></a></button>
-            </div>
-        </section>
-
-        <!--kids collection section-->
-        <section class="container mt-5">
-            <h1 class="penguin-catagory">Kids</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-                <div class="col">
-                    <div class="card h-100 shadow rounded">
-                        <img src="./Frontend_Assets/product_25.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Snowboard Jacket Mens</h5>
-                            <p class="card-text">
-                                Snowboard jacket are ferfect match for people in moutain areas
-                                or for tourist.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$85</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_26.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Man Leather Jackets</h5>
-                            <p class="card-text">
-                                Perfect bike riding jacket available with different color and
-                                sizes.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$74</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn penguin-btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 penguin-card-border shadow rounded">
-                        <img src="./Frontend_Assets/product_27.png" class="card-img-top penguin-card-img w-100"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Man Casual Jackets</h5>
-                            <p class="card-text">
-                                Matte Black Jacket with all sizes available.
-                            </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                            <div>
-                                <h3 class="price-text-style text-success">$68</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-success rounded-pill px-4">
-                                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- View More Products Button -->
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-primary rounded-pill btn-lg"><a class="nav-link"
-                        href="./kids.html">View More >></a></button>
-            </div>
-        </section>
+          </div>
     </main>
 
     <!--Footer section-->
@@ -386,6 +171,7 @@
     </section>
 
     <script src="./auth.js"></script>
+    <script src="./script.js"></script> 
 </body>
 
 </html>
