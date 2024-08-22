@@ -16,12 +16,17 @@ function displayProducts(filteredProducts) {
             <p class="card-text">${product.description}</p>
             <div class="card-body text-center d-flex justify-content-between align-items-center">
             <p class="card-text m-0"><strong class="text-success">${product.price}</strong></p>
-            <button class="btn btn-success btn-buy" onclick="addToCart(${product.id}); event.stopPropagation();">Add to Cart</button>
+            <button id="add-to-cart-${product.id}" class="btn btn-success btn-buy" onclick="addToCart(${product.id}); event.stopPropagation();">Add to Cart</button>
             </div>
           </div>
         </div>
       `;
         container.appendChild(productCard);
+
+        // Add event listener to the "Add to Cart" button
+        document.getElementById(`add-to-cart-${product.id}`).addEventListener('click', () => {
+            addToCart(product.id);
+        });
     });
 }
 

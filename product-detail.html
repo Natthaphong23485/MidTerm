@@ -59,7 +59,7 @@
                         <button class="btn btn-danger ms-2 d-none" id="logoutButton" type="button"><i
                                 class="fa-solid fa-right-from-bracket"></i> Log Out</button>
                         <button class="cart btn btn-outline-light ms-2" type="button">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a class="nav-link" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                         </button>
                     </div>
                 </div>
@@ -69,15 +69,36 @@
 
     <main class="my-5">
         <div class="container product-detail pt-5">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-6">
-                    <img id="product-image" src="" alt="Product Image" class="img-fluid">
+                    <div class="h-100 pt-3 d-flex justify-content-center border rounded-3 shadow-sm">
+                        <img id="product-image" src="" alt="Product Image" class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 id="product-name"></h1>
-                    <p id="product-description"></p>
-                    <h3 id="product-price"></h3>
-                    <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    <div class="h-100 p-3 border rounded-3 shadow-sm">
+                        <h1 id="product-name"></h1>
+                        <p id="product-description"></p>
+                        <h3 id="product-price"></h3>
+                        <hr>
+                        <div id="product-colors">
+                            <h4>Color: <span id="selected-color"></span></h4>
+                            <div id="color-options"></div>
+                        </div>
+                        
+                        <div id="product-sizes">
+                            <h4>Size: <span id="selected-size"></span></h4>
+                            <div id="size-options"></div>
+                        </div>
+                        <div class="my-3">
+                            <p>จำนวน</p>
+                            <input type="number" id="quantityInput" min="1" value="1" class="form-control w-auto">
+                        </div>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                        <hr>
+                        <h3>Material / Care</h3>
+                        <p id="product-detail"></p>
+                    </div>
                 </div>
             </div>
         </div>
