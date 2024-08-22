@@ -1,17 +1,17 @@
-// fetch.js
 let products = [];
 
 // Function to fetch products data from products.json
 async function loadProducts() {
     try {
-        const response = await fetch('./products.json'); // เปลี่ยน 'path/to/products.json' ให้ตรงกับที่อยู่ของไฟล์ JSON ของคุณ
+        const response = await fetch('./products.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         products = await response.json();
+        // Window.products = products;
         displayProducts(products);
         // detailProducts(products);
-        renderCart(products);
+        // renderCart();
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }

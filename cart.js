@@ -1,48 +1,61 @@
 function renderCart() {
-    const cartItemsContainer = document.getElementById('cart-items');
-    const totalPriceElement = document.getElementById('total-price');
-    
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    
-    // เคลียร์เนื้อหาเดิม
-    cartItemsContainer.innerHTML = '';
-    
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    console.log('Cart:', cart);
+    const cartContainer = document.getElementById('cart-container');
+    const totalContainer = document.getElementById('total-price');
+    console.log('Cart Container:', cartContainer);
+    console.log('Total Container:', totalContainer);
     let totalPrice = 0;
-    
+
+    cartContainer.innerHTML = '';
+
     cart.forEach(item => {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
-        
         itemElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
-            <div>
-                <p>${item.name}</p>
-                <p>$${item.price.toFixed(2)}</p>
-                <p>Quantity: ${item.quantity}</p>
-            </div>
-            <button class="remove-button" data-id="${item.id}">Remove</button>
+            <span>${item.name}</span>
+            <span>Quantity: ${item.quantity}</span>
+            <span>Price: ${item.price}</span>
+            <span>Total: ${item.price * item.quantity}</span>
         `;
-        
-        cartItemsContainer.appendChild(itemElement);
-        
+        cartContainer.appendChild(itemElement);
         totalPrice += item.price * item.quantity;
     });
-    
-    totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
-}
 
-document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('remove-button')) {
-        const productId = event.target.getAttribute('data-id');
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart = cart.filter(item => item.id !== productId);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        renderCart();
-    }
-});
+    totalContainer.textContent = `Total Price: ${totalPrice}`;
+}
 
 document.addEventListener('DOMContentLoaded', renderCart);
 
-document.getElementById('checkout-button').addEventListener('click', () => {
-    window.location.href = 'checkout.html';
-});
+function placeOrder() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length === 0) {
+        alert('Your cart is empty');
+        return;
+    }
+
+    const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
+    const postalCode = document.getElementById('postal-code').value;
+    const paymentMethod = document.getElementById('payment-method').value;
+
+    if (!address || !city || !postalCode || !paymentMethod) {
+        alert('Please fill in all the required fields');
+        return;
+    }
+
+    const orderDetails = {
+        cart,
+        address,
+        city,
+        postalCode,
+        paymentMethod,
+        totalPrice: cart.reduce((sum, item) => sum + item.price * item.quantity, 0),
+    };
+
+    console.log('Order placed:', orderDetails);
+    alert('Thank you for your order!');
+
+    localStorage.removeItem('cart');
+    window.location.reload();
+}
