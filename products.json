@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_13_removebg.png",
         "colors": [
@@ -34,7 +34,7 @@
         "id": 2,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_1_removebg.png",
         "colors": [
@@ -65,7 +65,7 @@
         "id": 3,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_25_removebg.png",
         "colors": [
@@ -96,7 +96,7 @@
         "id": 4,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_14_removebg.png",
         "colors": [
@@ -127,7 +127,7 @@
         "id": 5,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_2_removebg.png",
         "colors": [
@@ -158,7 +158,7 @@
         "id": 6,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_26_removebg.png",
         "colors": [
@@ -189,7 +189,7 @@
         "id": 7,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_15_removebg.png",
         "colors": [
@@ -220,7 +220,7 @@
         "id": 8,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_3_removebg.png",
         "colors": [
@@ -251,7 +251,7 @@
         "id": 9,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_27_removebg.png",
         "colors": [
@@ -282,7 +282,7 @@
         "id": 10,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_16_removebg.png",
         "colors": [
@@ -313,7 +313,7 @@
         "id": 11,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_4_removebg.png",
         "colors": [
@@ -344,7 +344,7 @@
         "id": 12,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_28_removebg.png",
         "colors": [
@@ -375,7 +375,7 @@
         "id": 13,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_17_removebg.png",
         "colors": [
@@ -406,7 +406,7 @@
         "id": 14,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_5_removebg.png",
         "colors": [
@@ -437,7 +437,7 @@
         "id": 15,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_29_removebg.png",
         "colors": [
@@ -468,7 +468,7 @@
         "id": 16,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_18_removebg.png",
         "colors": [
@@ -499,7 +499,7 @@
         "id": 17,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_6_removebg.png",
         "colors": [
@@ -530,7 +530,7 @@
         "id": 18,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_30_removebg.png",
         "colors": [
@@ -561,7 +561,7 @@
         "id": 19,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_19_removebg.png",
         "colors": [
@@ -592,7 +592,7 @@
         "id": 20,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_7_removebg.png",
         "colors": [
@@ -623,7 +623,7 @@
         "id": 21,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_31_removebg.png",
         "colors": [
@@ -654,7 +654,7 @@
         "id": 22,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_20_removebg.png",
         "colors": [
@@ -685,7 +685,7 @@
         "id": 23,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_8_removebg.png",
         "colors": [
@@ -716,7 +716,7 @@
         "id": 24,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_32_removebg.png",
         "colors": [
@@ -747,7 +747,7 @@
         "id": 25,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_21_removebg.png",
         "colors": [
@@ -778,7 +778,7 @@
         "id": 26,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_9_removebg.png",
         "colors": [
@@ -809,7 +809,7 @@
         "id": 27,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_33_removebg.png",
         "colors": [
@@ -840,7 +840,7 @@
         "id": 28,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_22_removebg.png",
         "colors": [
@@ -871,7 +871,7 @@
         "id": 29,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_10_removebg.png",
         "colors": [
@@ -902,7 +902,7 @@
         "id": 30,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_34_removebg.png",
         "colors": [
@@ -933,7 +933,7 @@
         "id": 31,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_23_removebg.png",
         "colors": [
@@ -964,7 +964,7 @@
         "id": 32,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_11_removebg.png",
         "colors": [
@@ -995,7 +995,7 @@
         "id": 33,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_35_removebg.png",
         "colors": [
@@ -1026,7 +1026,7 @@
         "id": 34,
         "name": "Men's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$19.99",
+        "price": 19.99,
         "category": "men",
         "image": "./Frontend_Assets/product_24_removebg.png",
         "colors": [
@@ -1057,7 +1057,7 @@
         "id": 35,
         "name": "Women's Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "women",
         "image": "./Frontend_Assets/product_12_removebg.png",
         "colors": [
@@ -1088,7 +1088,7 @@
         "id": 36,
         "name": "Kids' Clothes",
         "description": "Lorem ipsum dolor sit amet consectetur.",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "kids",
         "image": "./Frontend_Assets/product_36_removebg.png",
         "colors": [

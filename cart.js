@@ -14,9 +14,12 @@ function renderCart() {
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
             <span>${item.name}</span>
+            <span>Color: ${item.color}</span>
+            <span>Size: ${item.size}</span>
             <span>Quantity: ${item.quantity}</span>
             <span>Price: ${item.price}</span>
             <span>Total: ${item.price * item.quantity}</span>
+            <button onclick="editCartItem(${item.id}, '${item.color}', '${item.size}')">Edit</button>
         `;
         cartContainer.appendChild(itemElement);
         totalPrice += item.price * item.quantity;
@@ -57,5 +60,9 @@ function placeOrder() {
     alert('Thank you for your order!');
 
     localStorage.removeItem('cart');
-    window.location.reload();
+    window.location.href = "./order-confirmation.html";
+}
+
+function editCartItem(productId, color, size) {
+    window.location.href = `product-detail.html?id=${productId}&color=${color}&size=${size}&action=edit`;
 }

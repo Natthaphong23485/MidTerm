@@ -69,6 +69,10 @@
 
     <main class="my-5">
         <div class="container product-detail pt-5">
+            <button class="cart btn btn-outline-dark ms-2 mb-3" type="button">
+                <a class="nav-link" href="./shop.html">
+                    << Back</a>
+            </button>
             <div class="row ">
                 <div class="col-md-6">
                     <div class="h-100 pt-3 d-flex justify-content-center border rounded-3 shadow-sm">
@@ -85,7 +89,7 @@
                             <h4>Color: <span id="selected-color"></span></h4>
                             <div id="color-options"></div>
                         </div>
-                        
+
                         <div id="product-sizes">
                             <h4>Size: <span id="selected-size"></span></h4>
                             <div id="size-options"></div>
@@ -94,7 +98,7 @@
                             <p>จำนวน</p>
                             <input type="number" id="quantityInput" min="1" value="1" class="form-control w-auto">
                         </div>
-                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                        <button id="add-to-cart-detail" class="btn btn-primary">Add to Cart</button>
                         <hr>
                         <h3>Material / Care</h3>
                         <p id="product-detail"></p>
@@ -162,7 +166,10 @@
     </section>
 
     <script src="./auth.js"></script>
+    <!-- Load product-detail.js first -->
     <script src="./product-detail.js"></script>
+    <!-- Load add-to-cart.js after product-detail.js -->
+    <script src="./add-to-cart.js"></script>
 </body>
 
 </html>
