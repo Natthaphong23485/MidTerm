@@ -4,7 +4,7 @@ document.getElementById('add-to-cart-detail').addEventListener('click', () => {
     const quantity = parseInt(document.getElementById('quantityInput').value, 10);
 
     if (!selectedColor || !selectedSize || !quantity || quantity <= 0) {
-        alert('กรุณาเลือกสี, ขนาด และจำนวนสินค้าที่ถูกต้อง');
+        alert('Please select the correct color, size and quantity.');
         return;
     }
 
@@ -12,7 +12,7 @@ document.getElementById('add-to-cart-detail').addEventListener('click', () => {
     const product = getProductById(productId);
 
     if (!product) {
-        alert('สินค้าหมายเลขนี้ไม่พบ');
+        alert('This product number is not found.');
         return;
     }
 
@@ -43,6 +43,6 @@ document.getElementById('add-to-cart-detail').addEventListener('click', () => {
 
     // บันทึกข้อมูลใหม่ใน localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
-    alert('เพิ่มสินค้าในตะกร้าแล้ว');
-    window.location.href = "cart.html";
+
+    alert('Successfully added to cart');
 });
