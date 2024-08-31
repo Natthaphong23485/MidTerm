@@ -33,6 +33,7 @@ document.getElementById('add-to-cart-detail').addEventListener('click', () => {
     // เพิ่มสินค้าข้อมูลใหม่ที่แก้ไขแล้วลงในตะกร้า
     cart.push({
         id: product.id.toString(), // แปลง id เป็นสตริงเพื่อความสม่ำเสมอ
+        image: product.image,
         name: product.name,
         color: selectedColor,
         size: selectedSize,

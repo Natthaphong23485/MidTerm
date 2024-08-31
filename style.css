@@ -240,6 +240,33 @@ label {
     transform: scale(.6);
 }
 
+/* form-address */
+.form-address label {
+    justify-content: left;
+    color: #000;
+    transform: scale(.6);
+    margin: 0;
+}
+
+.form-address .input {
+    height: auto;
+    border: 1px solid gray;
+    margin: 5px auto;
+}
+
+.payment-select {
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid gray;
+}
+
+.place-order {
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    margin: 4rem auto;
+}
+
 /* shop page */
 .product-card {
     cursor: pointer;
